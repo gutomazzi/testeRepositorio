@@ -25,6 +25,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.ColorDialog2 = New System.Windows.Forms.ColorDialog()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -36,11 +37,20 @@ Partial Class Form1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(362, 137)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 1
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(563, 282)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -51,4 +61,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents ColorDialog1 As ColorDialog
     Friend WithEvents ColorDialog2 As ColorDialog
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
